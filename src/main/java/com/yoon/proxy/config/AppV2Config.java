@@ -1,4 +1,4 @@
-package com.yoon.proxy.app.config;
+package com.yoon.proxy.config;
 
 
 import com.yoon.proxy.app.v2.OrderControllerV2;

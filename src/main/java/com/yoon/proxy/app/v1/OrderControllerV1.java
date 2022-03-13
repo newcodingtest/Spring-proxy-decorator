@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ResponseBody
 public interface OrderControllerV1 {
 
-    @GetMapping("/vi/request")
+    @GetMapping("/v1/request")
     String request(@RequestParam("itemId")String itemId);
 
-    @GetMapping("/vi/no-log")
+    @GetMapping("/v1/no-log")
     String noLog();
 
 }
