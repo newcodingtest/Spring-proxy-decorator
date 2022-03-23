@@ -6,6 +6,8 @@ import com.yoon.proxy.app.trace.logTrace.LogTrace;
 import com.yoon.proxy.app.trace.logTrace.ThreadLocalLogTrace;
 import com.yoon.proxy.config.v2_dynamicproxy.DynamicProxyBasicConfig;
 import com.yoon.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig;
+import com.yoon.proxy.config.v3_proxyFactory.ProxyFactoryConfigV1;
+import com.yoon.proxy.config.v3_proxyFactory.ProxyFactoryConfigV2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +18,9 @@ import org.springframework.context.annotation.Import;
 //@Import(InterfaceProxyConfig.class)
 //@Import(ConcreateProxyConfig.class)
 //@Import(DynamicProxyBasicConfig.class)
-@Import(DynamicProxyFilterConfig.class)
+//@Import(DynamicProxyFilterConfig.class)
+//@Import(ProxyFactoryConfigV1.class)
+@Import(ProxyFactoryConfigV2.class)
 @SpringBootApplication(scanBasePackages = "com.yoon.proxy.app")
 public class ProxyApplication {
 
